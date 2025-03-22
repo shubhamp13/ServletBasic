@@ -1,4 +1,4 @@
-package comm.basic;
+package com.basic;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 
-@WebServlet("/first")
+ 
 public class FirstServlet implements Servlet 
 {
 	private ServletConfig config;
