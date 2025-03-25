@@ -3,12 +3,16 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>shubham puri</param-value>
+	</context-param>
 	<display-name>Archetype Created Web Application</display-name>
 	<servlet>
 		<servlet-name>FirstServlet</servlet-name>
 		<servlet-class>com.basic.FirstServlet</servlet-class>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>FirstServlet</servlet-name>
 		<url-pattern>/first</url-pattern>
@@ -22,8 +26,8 @@
 		<servlet-name>SecondServlet</servlet-name>
 		<url-pattern>/second</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<servlet-name>ThirdServlet</servlet-name>
 		<display-name>ThirdServlet</display-name>
@@ -35,4 +39,65 @@
 		<url-pattern>/third</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.basic.RegisterServlet</servlet-class>
+		<init-param>
+			<param-name>UserName</param-name>
+			<param-value>shubhamp13</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<display-name>ServletConfigDemo</display-name>
+		<description></description>
+		<servlet-class>com.servletconfig.ServletConfigDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<url-pattern>/ServletConfigDemo</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<servlet-class>com.servletconfig.ServletConfigDemo</servlet-class>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>shubham pandit puri</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigDemo</servlet-name>
+		<url-pattern>/servletconfig</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ServletContextDemo</servlet-name>
+		<servlet-class>com.servletcontext.ServletContextDemo</servlet-class>
+		<init-param>
+			<param-name>mobile</param-name>
+			<param-value>8793569631</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<display-name>LoginServlet</display-name>
+		<description></description>
+		<servlet-class>com.session.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletContextDemo</servlet-name>
+		<url-pattern>/servletcontext</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
